@@ -1,5 +1,5 @@
 /**
- * main - Entry point
+ * main - Wows
  *
  * Return: Always 1 (Error)
 */
