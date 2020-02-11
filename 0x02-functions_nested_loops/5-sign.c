@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
-  * int print_sign - prints the sign of a number
-  * Return - 1 if n>o, 0 if n=0, -1 if n<0
+  * print_sign - prints the sign of a number
+  * @n: is the argument
+  * Return: 1, 0, -1
   */
 
 int print_sign(int n)
