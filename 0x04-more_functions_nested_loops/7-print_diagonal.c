@@ -4,6 +4,7 @@
  * print_diagonal - print diagonals
  * @n: number of diagonals
  * @i
+ * @j
  **/
 
 void print_diagonal(int n)
@@ -16,7 +17,7 @@ void print_diagonal(int n)
 		{
 			for (j = 1; j <= i; j++)
 			_putchar(' ');
-			_putchar(92);
+			_putchar('\\');
 			_putchar ('\n');
 		}
 		if (n <= 0)
