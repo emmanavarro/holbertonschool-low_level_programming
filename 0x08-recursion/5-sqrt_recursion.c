@@ -11,7 +11,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * calculate_srt - calculates the square of a number.
+ * calculate_sqrt - calculates the square of a number.
  * @i: variable.
  * @n: variable.
  * Return: -1.
