@@ -18,16 +18,17 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		ptr = va_arg(lst_str, char *);
-
 		if (ptr)
+		{
 			printf("%s", ptr);
-
-		else
+		} else
+		{
 			printf("(nil)");
-			
+		}
 		if (separator && (i < n - 1))
+		{
 			printf("%s", separator);
-
+		}
 	}
 	printf("\n");
 	va_end(lst_str);
