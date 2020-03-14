@@ -39,7 +39,15 @@ void add_float(va_list list)
 
 void add_str(va_list list)
 {
-	printf("%s", va_arg(list, char*));
+	char *str = va_arg(list, char*);
+
+	if (str != NULL)
+	{
+		printf("%s", str);
+		return;
+	}
+	else
+		printf("(nil)");
 }
 
 /**
