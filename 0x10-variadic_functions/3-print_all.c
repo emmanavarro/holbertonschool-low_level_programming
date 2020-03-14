@@ -41,13 +41,10 @@ void add_str(va_list list)
 {
 	char *str = va_arg(list, char*);
 
-	if (str != NULL)
-	{
-		printf("%s", str);
-		return;
-	}
-	else
-		printf("(nil)");
+	if (str == NULL)
+		str = "(nil)";
+
+	printf("%s", str);
 }
 
 /**
