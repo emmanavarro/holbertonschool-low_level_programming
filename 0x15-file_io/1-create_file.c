@@ -19,9 +19,11 @@ int create_file(const char *filename, char *text_content)
 
 	if (op < 0)
 		return (-1);
-
-	while (text_content[ind])
-		ind++;
+	if (text_content)
+	{
+		while (text_content[ind] != '\0')
+			ind++;
+	}
 
 	wr = write(op, text_content, ind);
 
