@@ -16,7 +16,8 @@ int main(int ac, char *av[])
 	fd_from = open(av[1], O_RDONLY);
 	if (fd_from < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		exit(98);
 	}
 	fd_to = open(av[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
 	if (fd_to < 0)
