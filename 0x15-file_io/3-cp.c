@@ -3,7 +3,6 @@
  * main - copies the content of a file to another file
  * @ac: number of arguments
  * @av: elements of arguments
- *
  * Return: 0 success
  */
 int main(int ac, char *av[])
@@ -19,7 +18,7 @@ int main(int ac, char *av[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fd_to = open(av[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
+	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to < 0)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	do {
@@ -28,7 +27,7 @@ int main(int ac, char *av[])
 	} while (rd_file == 1024);
 		if (rd_file < 0)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		}
 		if (wr_file < 0)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
