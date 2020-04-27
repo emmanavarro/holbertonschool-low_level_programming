@@ -22,3 +22,19 @@ char *_strcat(char *dest, char *src)
 	}
 	return (dest);
 }
+
+/**
+ * clear_buffer - clear the buffer.
+ *
+ * @buff: pointer to the buffer position.
+ */
+
+void clear_buffer(char *buff)
+{
+	int pos_b;
+
+	for (pos_b = 0; pos_b < BUFFER_SIZE; pos_b++)
+	{
+		buff[pos_b] = 0;
+	}
+}

@@ -3,12 +3,13 @@
 
 /* Define buffer */
 
-#define BUFFER_SIZE = 1024
+#define BUFFER_SIZE 1024
 
 /* Included standard libraries */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 
 /**
  * struct printf_types - struct formats.
@@ -16,19 +17,17 @@
  * @ftype: format.
  * @f: function associated.
  */
-typedef struct printf_types
+typedef struct print_format
 {
-	char *ftype;
-	void (*f)(va_list);
-} p_types;
+	char *placeholder;
+	int (*f)();
+} print_f;
 
 /* Print prototypes */
 
 /* Generic functions */
 
 char *_strcat(char *dest, char *src, int n);
-
-
 
 int _printf(const char *format, ...);
 
