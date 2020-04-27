@@ -1,0 +1,12 @@
+bin
+boot
+dev
+etc
+home
+lib
+media
+mnt
+opt
+proc
+root
+run
