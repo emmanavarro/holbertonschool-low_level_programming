@@ -52,5 +52,8 @@ What you should learn from this project:
 ### [8. Big O #5](./101-O)
 * What is the time complexity (average case) of a jump search in an array of size n, using step = sqrt(n)?
 
+### [9. Interpolation search](./102-interpolation.c)
+* Write a function that searches for a value in a sorted array of integers using the Interpolation search algorithm
+
 ## Author
 * **Emma Navarro Millán** - [@emmanavarro](https://github.com/emmanavarro)
